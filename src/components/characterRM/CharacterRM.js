@@ -7,7 +7,7 @@ const CharacterRm = () => {
     let [users, setUsers] = useState([]);
 
     useEffect(()=>{
-        getUsers().then(value => setUsers(value))
+        getUsers().then(value => setUsers(value.results))
     },[])
 
     return (
