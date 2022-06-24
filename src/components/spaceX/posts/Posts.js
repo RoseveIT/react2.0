@@ -1,7 +1,7 @@
 import {useEffect, useState} from "react";
 import {Post} from "../index";
 
-function Posts() {
+export default function Posts() {
 
     let [posts, setPosts] = useState([]);
 
@@ -19,5 +19,3 @@ function Posts() {
         </div>
     );
 }
-
-export {Posts}

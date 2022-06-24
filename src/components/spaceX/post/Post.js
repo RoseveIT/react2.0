@@ -1,4 +1,4 @@
-function Post({item:{mission_name, launch_year, mission_patch_small}}) {
+export default function Post({item:{mission_name, launch_year, mission_patch_small}}) {
     return (
         <div>
             <h2>- {mission_name} - {launch_year}</h2>
@@ -6,4 +6,3 @@ function Post({item:{mission_name, launch_year, mission_patch_small}}) {
         </div>
     );
 }
-export {Post}
