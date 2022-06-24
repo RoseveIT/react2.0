@@ -1,8 +1,9 @@
-export default function Post(props) {
-    let {flight_number, mission_name, launch_year} = props
+function Post({item:{mission_name, launch_year, mission_patch_small}}) {
     return (
         <div>
-            <h2>{flight_number} - {mission_name} - {launch_year}</h2>
+            <h2>- {mission_name} - {launch_year}</h2>
+            <img src={mission_patch_small} alt={mission_name}/>
         </div>
     );
 }
+export {Post}
