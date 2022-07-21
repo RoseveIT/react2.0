@@ -1,8 +1,9 @@
-import './App.css';
+import ShowCounts from "./components/ShowCounts";
 
 function App() {
   return (
     <div>
+      <ShowCounts/>
     </div>
   );
 }
