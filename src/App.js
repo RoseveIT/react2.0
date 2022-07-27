@@ -1,14 +1,12 @@
-import ShowCounts from "./components/ShowCounts";
-import Count1Tools from "./components/Count1Tools";
-import Count2Tools from "./components/Count2Tools";
+import CarForm from "./components/CarForm/CarForm";
+import Cars from "./components/Cars/Cars";
 
 function App() {
   return (
     <div>
-      <ShowCounts/>
+      <CarForm/>
       <hr/>
-      <Count1Tools/>
-      <Count2Tools/>
+      <Cars/>
     </div>
   );
 }
