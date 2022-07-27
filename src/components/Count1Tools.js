@@ -8,7 +8,7 @@ export default function Count1Tools() {
             <button onClick={()=>dispatch(count1Action.inc())}>inc</button>
             <button onClick={()=>dispatch(count1Action.dec())}>dec</button>
             <button onClick={()=>dispatch(count1Action.reset())}>reset</button>
-            <button onClick={()=>dispatch(count1Action.getAllUsers())}>users</button>
+            <button onClick={()=>dispatch(count1Action.getUsers())}>users</button>
         </div>
     );
 }
