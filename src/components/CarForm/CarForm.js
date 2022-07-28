@@ -25,9 +25,9 @@ export default function CarForm() {
 
     return (
         <form onSubmit={handleSubmit(submit)}>
-            <input type="text" placeholder={'model'} {...register('')}/>
-            <input type="text" placeholder={'price'} {...register('')}/>
-            <input type="text" placeholder={'year'} {...register('')}/>
+            <input type="text" placeholder={'model'} {...register('model')}/>
+            <input type="text" placeholder={'price'} {...register('price')}/>
+            <input type="text" placeholder={'year'} {...register('year')}/>
             <button>Update</button>
         </form>
     );

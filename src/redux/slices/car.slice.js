@@ -23,7 +23,7 @@ const getAll = createAsyncThunk(
 const updateById = createAsyncThunk(
     'carSlice/updateById',
     async ({id, car})=>{
-        const {data} = await carService.updateById(data.id, data.car );
+        const {data} = await carService.updateById(id, car);
         return data
     }
 );

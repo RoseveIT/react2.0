@@ -9,8 +9,8 @@ export default function Cars() {
     const dispatch = useDispatch();
 
     useEffect(()=>{
-        dispatch(carActions.getAll)
-    })
+        dispatch(carActions.getAll())
+    },[])
 
     return (
         <div>
