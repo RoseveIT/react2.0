@@ -33,7 +33,7 @@ const carSlice = createSlice({
     initialState,
     reducers:{
         setCarForUpdate:(state, action) => {
-            state.CarForUpdate = action.payload
+            state.carUpdate = action.payload
         }
     },
     extraReducers:(builder)=>
@@ -48,7 +48,7 @@ const carSlice = createSlice({
             .addCase(updateById.fulfilled, (state, action) => {
                 const currentCar = state.cars.find(value => value.id === action.payload.id);
                 Object.assign(currentCar, action.payload)
-                state.carForUpdate = null
+                state.carUpdate = null
             })
 
 });

@@ -6,20 +6,20 @@ import {carActions} from "../../redux";
 export default function CarForm() {
     const {reset, register, handleSubmit, setValue} = useForm();
 
-    const {carForUpdate} = useSelector(state => state.cars);
+    const {carUpdate} = useSelector(state => state.cars);
 
     const dispatch = useDispatch();
 
     useEffect(()=>{
-        if (carForUpdate){
-            setValue('model', carForUpdate.model)
-            setValue('price', carForUpdate.price)
-            setValue('year', carForUpdate.year)
+        if (carUpdate){
+            setValue('model', carUpdate.model)
+            setValue('price', carUpdate.price)
+            setValue('year', carUpdate.year)
         }
-    },[carForUpdate])
+    },[carUpdate])
 
     const submit = async (data) => {
-        await dispatch(carActions.updateById({id:carForUpdate.id, car:data}))
+        await dispatch(carActions.updateById({id:carUpdate.id, car:data}))
         reset()
     }
 
